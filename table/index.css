@@ -55,3 +55,57 @@ table {
   background: #666;
   color: #fff;
 }
+
+/* 테이블 4  */
+.tbl-04 {
+  border-top: 2px solid #ccc;
+}
+.tbl-04 td,
+.tbl-04 th {
+  border-bottom: 1px solid #ccc;
+  padding: 8px;
+}
+
+.tbl-04 th {
+  background: #efefef;
+}
+
+/* 테이블 5 */
+.tbl-05 td,
+.tbl-05 th {
+  border: 1px solid #ccc;
+  border-left: none;
+  padding: 8px;
+  text-align: center;
+}
+
+.tbl-05 td:last-child,
+.tbl-05 th:last-child {
+  border-right: none;
+}
+
+.tbl-05 th {
+  background: #efefef;
+}
+
+/* 테이블 6 */
+.tbl-06 td,
+.tbl-06 th {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.tbl-06 th {
+  background: #efefef;
+}
+
+/* 테이블 7 */
+.tbl-07 td,
+.tbl-07 th {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.tbl-07 th {
+  background: #efefef;
+}
