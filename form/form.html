@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <style>
+      input[type="text"] {
+        border: 3px solid red;
+      }
+      input[type="checkbox"] {
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>html forms</h2>
+    <form>
+      <input type="text" placeholder="이름" /> <br />
+      <input type="text" placeholder="이메일" /> <br />
+      <input type="text" placeholder="비밀번호" /> <br />
+
+      <div>
+        <label> <input type="checkbox" name="" id="" />봄 </label>
+        <label> <input type="checkbox" name="" id="" />여름 </label>
+        <label> <input type="checkbox" name="" id="" />가을 </label>
+        <label> <input type="checkbox" name="" id="" />겨울 </label>
+      </div>
+
+      <div>
+        <label for="apple">
+          <input type="radio" id="apple" name="fruit" value="사과" />사과
+        </label>
+        <label for="banana">
+          <input type="radio" id="banana" name="fruit" value="바나나" />바나나
+        </label>
+        <label for="peach">
+          <input type="radio" id="peach" name="fruit" value="복숭아" />복숭아
+        </label>
+      </div>
+
+      <input type="submit" value="보내기" />
+      <button type="submit">보내기</button>
+    </form>
+  </body>
+</html>
