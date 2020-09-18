@@ -39,12 +39,119 @@ body {
   width: 460px;
   height: 580px;
   float: left;
+  padding: 0 70px;
+  text-align: center;
+}
+
+.form h2 {
+  color: #fe5454;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 70px;
+}
+
+.form .social-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 30px;
+  margin-bottom: 16px; */
+  margin: 30px 0 16px;
+}
+
+.form .social-btns a {
+  border: 1px solid #1a2e35;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 30px;
+  border-radius: 50%;
+  margin: 0 10px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.form .social-btns a:hover {
+  background-color: #1a2e35;
+  color: #fff;
+}
+
+.form p {
+  margin-bottom: 22px;
+}
+
+.input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  border: 1px solid #cddee3;
+  outline: none;
+  background: #f7f8f9;
+  color: #6a6a6a;
+  transition: background 0.3s;
+}
+
+.input:focus {
+  background: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+}
+
+.input::placeholder {
+  color: #b2b2b2;
+  transition: color 0.3s;
+}
+
+.input:focus::placeholder {
+  color: transparent;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+.check input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.check a {
+  font-size: 12px;
+  color: #fe5454;
 }
 
 .photo {
   width: 340px;
   height: 580px;
-  background: red;
   float: right;
   border-radius: 0 10px 10px 0;
+  background: url("./images/photo01.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  width: 154px;
+  height: 46px;
+  border: 1px solid #fe5454;
+  border-radius: 8px;
+  background: #fe5454;
+  color: #fff;
+  font-size: 14px;
+  line-height: 44px;
+  cursor: pointer;
+}
+
+.btn-line {
+  border: 1px solid #fe5454;
+  background: transparent;
+  color: #fe5454;
 }
