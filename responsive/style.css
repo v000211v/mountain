@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.items {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.item {
+  width: 48%;
+  height: 300px;
+  background: #ccc;
+  float: left;
+  margin-right: 2%;
+}
+
+.item:last-child {
+  margin-right: 0;
+}
+
+/* responsive design  */
+@media (max-width: 600px) {
+  .item {
+    width: 100%;
+    float: initial;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}

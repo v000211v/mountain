@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.items {
+  width: 98%;
+  max-width: 1160px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.item {
+  background: #ccc;
+  height: 200px;
+  width: 32%;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 960px) {
+  .item {
+    width: 49%;
+  }
+
+@media (max-width: 680px) {
+  .item {
+    width: 100%;
+    
+  }
+
+}
