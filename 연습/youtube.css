@@ -3,3 +3,41 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.container {
+  padding: 20px;
+}
+
+.logo {
+  width: 100%;
+  display: block;
+}
+
+.logo img {
+  width: 200px;
+}
+
+.search {
+}
+
+.item01 {
+  background: red;
+  width: 1000px;
+  height: 580px;
+  margin: 20px;
+}
+input {
+  margin-top: 20px;
+  width: 1000px;
+  padding: 15px;
+
+  border-radius: 8px;
+  border: 1px solid #cddee3;
+  outline: none;
+  background: #f7f8f9;
+  color: #6a6a6a;
+  transition: background 0.3s;
+}
+
+input::placeholder {
+}

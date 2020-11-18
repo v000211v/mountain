@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+/* 글자 가운데로 정렬하는 속성 */
+div,
+li {
+  position: relative;
+}
+
+h4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* 글자 가운데로 정렬하는 속성 */
+
+.header {
+  height: 70px;
+  background: #aeaeae;
+}
+
+.slide {
+  height: 600px;
+  background: #c4c4c4;
+  margin-bottom: 40px;
+}
+
+.section {
+  max-width: 1160px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  /* 마지막부분이 같은 속성을 덮음 */
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* content-01 */
+.content-01 li {
+  width: 560px;
+  height: 300px;
+  background: #e1e1e1;
+}
+
+/* content-02 */
+.content-02 li {
+  width: 360px;
+  height: 220px;
+  background: #f0f0f0;
+}
+
+/* banner */
+.banner {
+  height: 400px;
+  background: #c4c4c4;
+  margin-bottom: 40px;
+}
+
+/* content-04 */
+.content-04 li {
+  width: 260px;
+  height: 260px;
+  background: #e1e1e1;
+  margin-bottom: 40px;
+}
+
+.content-04 li:nth-child(5),
+.content-04 li:nth-child(6),
+.content-04 li:nth-child(7),
+.content-04 li:nth-child(8) {
+  margin-bottom: 0;
+}
+
+/* content-05 */
+.banner2 {
+  height: 300px;
+  background: #f0f0f0;
+}
+
+/* footer */
+.footer {
+  height: 400px;
+  background: #aeaeae;
+}
+
+/* 반응형 */
+@media (max-width: 1200px) {
+  .section {
+    width: 96%;
+    margin-bottom: 20px;
+  }
+  .slide,
+  .banner {
+    margin-bottom: 20px;
+  }
+  .content-01 li {
+    width: 49%;
+  }
+  .content-02 li {
+    width: 32%;
+  }
+  .content-04 li {
+    width: 23.5%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .content-04 {
+    justify-content: initial;
+  }
+
+  .content-04 li {
+    width: 32%;
+    margin-right: 2%;
+  }
+  .content-04 li:nth-child(3n) {
+    margin-right: 0;
+  }
+  .banner {
+    height: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .content-01 li {
+    width: 100%;
+    height: 260px;
+    margin-bottom: 20px;
+  }
+
+  .content-01 li:last-child {
+    margin-bottom: 0;
+  }
+  .content-04 li {
+    height: 220px;
+  }
+}
+@media (max-width: 576px) {
+  .content-02 li {
+    width: 100%;
+    height: 160px;
+    margin-bottom: 20px;
+  }
+
+  .content-02 li:last-child {
+    margin-bottom: 0;
+  }
+
+  .content-04 {
+    justify-content: space-between;
+  }
+
+  .content-04 li {
+    width: 49%;
+    height: 140px;
+    margin: initial;
+    margin-bottom: 2%;
+  }
+
+  .content-04 li:nth-child(5),
+  .content-04 li:nth-child(6) {
+    margin-bottom: 2%;
+  }
+}
